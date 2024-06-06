@@ -181,6 +181,16 @@
                 </footer>
             </div>
         </div>
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+              console.log('Service Worker registration failed:', error);
+            });
+          }
+        </script>        
         <script src="vendor/bootstrap_5.2.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="vendor/chart_2.8.0/js/chart.min.js" crossorigin="anonymous"></script>
