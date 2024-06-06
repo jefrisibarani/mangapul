@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', event => {
    }
    */
     
-   fetch("/demo.json").then(
+   fetch("/mangapul/demo.json").then(
        response => response.json()
    ).then(
        data => {
