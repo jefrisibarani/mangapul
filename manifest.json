@@ -1,7 +1,7 @@
 {
   "name": "Mangapul",
   "short_name": "Mangapul",
-  "start_url": "https://jefrisibarani.github.io/mangapul/",
+  "start_url": "/mangapul/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
