@@ -8,6 +8,7 @@ var CACHE_NAME = APP_NAME + '-' + APP_VER;
 // Add all files you want to view offline below.
 // Leave REQUIRED_FILES = [] to disable offline.
 var REQUIRED_FILES = [
+  '/mangapul/',
   '/mangapul/401.html',
   '/mangapul/404.html',
   '/mangapul/500.html',
