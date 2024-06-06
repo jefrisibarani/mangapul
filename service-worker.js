@@ -1,7 +1,7 @@
 // To clear cache on devices, always increase APP_VER number after making changes.
 // The app will serve fresh content right away or after 2-3 refreshes (open / close)
 var APP_NAME = 'Mangapul';
-var APP_VER = '0.1.1';
+var APP_VER = '0.1.2';
 var CACHE_NAME = APP_NAME + '-' + APP_VER;
 
 // Files required to make this app work offline.
@@ -32,7 +32,6 @@ var REQUIRED_FILES = [
   '/mangapul/js/scripts.js',
   '/mangapul/login.html',
   '/mangapul/password.html',
-  '/mangapul/README.md',
   '/mangapul/register.html',
   '/mangapul/vendor/bootstrap_5.2.3/js/bootstrap.bundle.min.js',
   '/mangapul/vendor/bootstrap_5.2.3/js/bootstrap.bundle.min.js.map',

@@ -8,6 +8,8 @@
         <meta name="author" content="" />
         <title>404 Error - Tobasa Web Service</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="manifest" href="/mangapul/manifest.json" />
+        <meta name="theme-color" content="#000000">
         <script src="vendor/fontawesome_6.3.0/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -46,6 +48,16 @@
                 </footer>
             </div>
         </div>
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/mangapul/service-worker.js',{scope: '/mangapul/'})
+            .then(function(registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+              console.log('Service Worker registration failed:', error);
+            });
+          }
+        </script>         
         <script src="vendor/bootstrap_5.2.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
