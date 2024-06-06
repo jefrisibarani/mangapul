@@ -183,7 +183,7 @@
         </div>
         <script>
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/mangapul/service-worker.js',{scope: '/mangapul'})
+            navigator.serviceWorker.register('/service-worker.js',{scope: '/mangapul'})
             .then(function(registration) {
               console.log('Service Worker registered with scope:', registration.scope);
             }).catch(function(error) {
